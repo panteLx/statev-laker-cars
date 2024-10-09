@@ -63,7 +63,7 @@
               <a href="#contact" class="nav-link smoothScroll">Kontakt</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link smoothScroll" style="color: green">Geöffnet</a>
+              <a class="nav-link smoothScroll" id="is-open"></a>
             </li>
           </ul>
         </div>
@@ -116,30 +116,24 @@
             <h2 class="mb-4" data-aos="fade-up" data-aos-delay="800">
               Unser <span>Deal des Monats</span>
             </h2>
-            <div data-aos="fade-up" data-aos-delay="900">
+
+            <div id="car-container" data-aos="fade-up" data-aos-delay="900">
               <div class="factory-thumb">
-                <img
-                  src="images/cars/caracara.png"
-                  class="img-fluid"
-                  alt="factory"
-                />
-
-                <div class="factory-info">
-                  <h3 class="mb-1">Caracara</h3>
-
-                  <span
-                    ><strong
+                <img src="" class="img-fluid" alt="car" id="car-image" />
+                <div class="factory-info random-car">
+                  <h3 class="mb-1" id="car-name"></h3>
+                  <span>
+                    <strong
                       ><a href="#" class="fa fa-map" style="color: #909090"></a>
-                      Neuwagen</strong
-                    >
-                    - 100.000$<br
-                  /></span>
-
-                  <p class="mt-3">
-                    PS: 400 PS <br />
-                    Tuned: Nein <br />
-                    Kilometerstand: 10.00 KM <br />
-                    Kofferraumvolumen: 100 KG
+                      <span id="car-zustand"></span>
+                      - <span id="car-price"></span></strong
+                    ><br />
+                  </span>
+                  <p class="mt-3" id="car-details">
+                    PS: <span id="car-ps"></span> <br />
+                    Tuned: <span id="car-tuned"></span> <br />
+                    Kilometerstand: <span id="car-km"></span> <br />
+                    Kofferraumvolumen: <span id="car-trunk"></span>
                   </p>
                 </div>
               </div>
@@ -149,7 +143,6 @@
       </div>
     </section>
 
-    <!-- CARS -->
     <section class="factory section" id="cars">
       <div class="container">
         <div class="row">
@@ -163,238 +156,8 @@
           <div class="col-lg-12" data-aos="fade-up" data-aos-delay="400">
             <div class="arrows">
               <div class="slideshow-container">
-                <div class="slideshow">
-                  <div class="slide">
-                    <div class="car factory-thumb">
-                      <img
-                        src="images/cars/caracara.png"
-                        class="img-fluid"
-                        alt="Caracara"
-                      />
-                      <div class="factory-info car-info">
-                        <h3 class="mb-1">Caracara</h3>
-                        <span
-                          ><strong
-                            ><a
-                              href="#"
-                              class="fa fa-map"
-                              style="color: #909090"
-                            ></a>
-                            Neuwagen</strong
-                          >
-                          - 100.000$<br
-                        /></span>
-                        <p class="mt-3">
-                          PS: 400 PS <br />Tuned: Nein <br />Kilometerstand:
-                          10.00 KM <br />Kofferraumvolumen: 100 KG
-                        </p>
-                      </div>
-                    </div>
-                    <div class="car factory-thumb">
-                      <img
-                        src="images/cars/caracara.png"
-                        class="img-fluid"
-                        alt="Caracara 2"
-                      />
-                      <div class="factory-info car-info">
-                        <h3 class="mb-1">Caracara 2</h3>
-                        <span
-                          ><strong
-                            ><a
-                              href="#"
-                              class="fa fa-map"
-                              style="color: #909090"
-                            ></a>
-                            Neuwagen</strong
-                          >
-                          - 110.000$<br
-                        /></span>
-                        <p class="mt-3">
-                          PS: 450 PS <br />Tuned: Ja <br />Kilometerstand: 5.00
-                          KM <br />Kofferraumvolumen: 150 KG
-                        </p>
-                      </div>
-                    </div>
-                    <div class="car factory-thumb">
-                      <img
-                        src="images/cars/caracara.png"
-                        class="img-fluid"
-                        alt="Caracara 3"
-                      />
-                      <div class="factory-info car-info">
-                        <h3 class="mb-1">Caracara 3</h3>
-                        <span
-                          ><strong
-                            ><a
-                              href="#"
-                              class="fa fa-map"
-                              style="color: #909090"
-                            ></a>
-                            Neuwagen</strong
-                          >
-                          - 120.000$<br
-                        /></span>
-                        <p class="mt-3">
-                          PS: 500 PS <br />Tuned: Ja <br />Kilometerstand: 3.00
-                          KM <br />Kofferraumvolumen: 200 KG
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slide">
-                    <div class="car factory-thumb">
-                      <img
-                        src="images/cars/caracara.png"
-                        class="img-fluid"
-                        alt="Caracara 4"
-                      />
-                      <div class="factory-info car-info">
-                        <h3 class="mb-1">Caracara 4</h3>
-                        <span
-                          ><strong
-                            ><a
-                              href="#"
-                              class="fa fa-map"
-                              style="color: #909090"
-                            ></a>
-                            Neuwagen</strong
-                          >
-                          - 130.000$<br
-                        /></span>
-                        <p class="mt-3">
-                          PS: 550 PS <br />Tuned: Ja <br />Kilometerstand: 1.00
-                          KM <br />Kofferraumvolumen: 250 KG
-                        </p>
-                      </div>
-                    </div>
-                    <div class="car factory-thumb">
-                      <img
-                        src="images/cars/caracara.png"
-                        class="img-fluid"
-                        alt="Caracara 5"
-                      />
-                      <div class="factory-info car-info">
-                        <h3 class="mb-1">Caracara 5</h3>
-                        <span
-                          ><strong
-                            ><a
-                              href="#"
-                              class="fa fa-map"
-                              style="color: #909090"
-                            ></a>
-                            Neuwagen</strong
-                          >
-                          - 140.000$<br
-                        /></span>
-                        <p class="mt-3">
-                          PS: 600 PS <br />Tuned: Ja <br />Kilometerstand: 0.50
-                          KM <br />Kofferraumvolumen: 300 KG
-                        </p>
-                      </div>
-                    </div>
-                    <div class="car factory-thumb">
-                      <img
-                        src="images/cars/caracara.png"
-                        class="img-fluid"
-                        alt="Caracara 6"
-                      />
-                      <div class="factory-info car-info">
-                        <h3 class="mb-1">Caracara 6</h3>
-                        <span
-                          ><strong
-                            ><a
-                              href="#"
-                              class="fa fa-map"
-                              style="color: #909090"
-                            ></a>
-                            Neuwagen</strong
-                          >
-                          - 150.000$<br
-                        /></span>
-                        <p class="mt-3">
-                          PS: 650 PS <br />Tuned: Ja <br />Kilometerstand: 0.10
-                          KM <br />Kofferraumvolumen: 350 KG
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slide">
-                    <div class="car factory-thumb">
-                      <img
-                        src="images/cars/caracara.png"
-                        class="img-fluid"
-                        alt="Caracara 7"
-                      />
-                      <div class="factory-info car-info">
-                        <h3 class="mb-1">Caracara 7</h3>
-                        <span
-                          ><strong
-                            ><a
-                              href="#"
-                              class="fa fa-map"
-                              style="color: #909090"
-                            ></a>
-                            Neuwagen</strong
-                          >
-                          - 160.000$<br
-                        /></span>
-                        <p class="mt-3">
-                          PS: 700 PS <br />Tuned: Ja <br />Kilometerstand: 0.05
-                          KM <br />Kofferraumvolumen: 400 KG
-                        </p>
-                      </div>
-                    </div>
-                    <div class="car factory-thumb">
-                      <img
-                        src="images/cars/caracara.png"
-                        class="img-fluid"
-                        alt="Caracara 8"
-                      />
-                      <div class="factory-info car-info">
-                        <h3 class="mb-1">Caracara 8</h3>
-                        <span
-                          ><strong
-                            ><a
-                              href="#"
-                              class="fa fa-map"
-                              style="color: #909090"
-                            ></a>
-                            Neuwagen</strong
-                          >
-                          - 170.000$<br
-                        /></span>
-                        <p class="mt-3">
-                          PS: 800 PS <br />Tuned: Ja <br />Kilometerstand: 0.01
-                          KM <br />Kofferraumvolumen: 450 KG
-                        </p>
-                      </div>
-                    </div>
-                    <div class="car factory-thumb">
-                      <img
-                        src="images/cars/caracara.png"
-                        class="img-fluid"
-                        alt="Caracara 9"
-                      />
-                      <div class="factory-info car-info">
-                        <h3 class="mb-1">Caracara 9</h3>
-                        <span
-                          ><strong
-                            ><a
-                              href="#"
-                              class="fa fa-map"
-                              style="color: #909090"
-                            ></a>
-                            Neuwagen</strong
-                          >
-                          - 180.000$<br
-                        /></span>
-                        <p class="mt-3">
-                          PS: 900 PS <br />Tuned: Ja <br />Kilometerstand: 0.00
-                          KM <br />Kofferraumvolumen: 500 KG
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                <div class="slideshow" id="car-slider">
+                  <!-- Dynamisch generierte Autos werden hier eingefügt -->
                 </div>
               </div>
               <div class="left-arrow">←</div>
@@ -619,6 +382,6 @@
     <script src="js/smoothscroll.js"></script>
     <script src="js/custom.js"></script>
 
-    <!--<script src="api.js?v=1.1"></script>-->
+    <script src="js/script.js?v=1.1"></script>
   </body>
 </html>

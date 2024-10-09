@@ -432,11 +432,14 @@ th {
 .slideshow {
   display: flex;
   transition: transform 0.5s ease; /* Für einen sanften Slide-Effekt */
+  width: 100%; /* Dynamische Breite basierend auf der Anzahl der Slides */
 }
 
 .slide {
   display: flex; /* Flexbox für die Slides aktivieren */
-  min-width: 100%; /* Jede Slide nimmt die volle Breite des Containers ein */
+  flex: 0 0 auto; /* Flex-Elemente werden nicht skaliert */
+  width: fit-content; /* Standardmäßig drei Slides anzeigen */
+  max-width: 100%;
 }
 
 .car {
@@ -446,10 +449,30 @@ th {
   align-items: center; /* Zentrieren */
   padding: 10px; /* Etwas Platz um die Autos */
   box-shadow: none;
+  transition: transform 0.3s ease; /* Sanfte Übergangsanimation */
+  max-width: 36%;
 }
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+  .slide {
+    width: 100%; /* Bei kleinen Bildschirmen nur ein Slide */
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .slide {
+    width: calc(100% / 2); /* Bei mittleren Bildschirmen zwei Slides */
+  }
+}
+
 .car-info {
   width: 100%;
   background: var(--about-bg-color);
+}
+
+.random-car span {
+  color: #fff;
 }
 
 .left-arrow,
