@@ -23,13 +23,13 @@
 }
 
 :root {
-  --primary-color: #b67c00;
+  --primary-color: #013d75;
   --white-color: #ffffff;
   --dark-color: #171819;
   --about-bg-color: #242424;
 
   --gray-color: #909090;
-  --link-color: #b67c00;
+  --link-color: #013d75;
   --p-color: #979797;
 
   --base-font-family: "Plain", sans-serif;
@@ -392,6 +392,9 @@ th {
   position: relative;
 }
 
+.hero-text {
+  padding-top: 15rem;
+}
 /*---------------------------------------
      FACTORIES               
   -----------------------------------------*/
@@ -442,6 +445,7 @@ th {
   flex-direction: column; /* Bilder und Infos übereinander anordnen */
   align-items: center; /* Zentrieren */
   padding: 10px; /* Etwas Platz um die Autos */
+  box-shadow: none;
 }
 
 .left-arrow,
