@@ -43,8 +43,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    const leftArrow = slideshow.parentElement.querySelector(".left-arrow");
-    const rightArrow = slideshow.parentElement.querySelector(".right-arrow");
+    const leftArrow = document.querySelector(".left-arrow");
+    const rightArrow = document.querySelector(".right-arrow");
 
     leftArrow.addEventListener("click", () => {
       index = index > 0 ? index - 1 : slides.length - 1; // Gehe zum vorherigen Slide

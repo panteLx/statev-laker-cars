@@ -412,7 +412,7 @@ th {
 }
 
 .factory-thumb:hover {
-  transform: scale(1.1); /* Vergrößert das Bild beim Hover */
+  transform: scale(1.03); /* Vergrößert das Bild beim Hover */
 }
 
 .factory-info img {
@@ -447,6 +447,10 @@ th {
   padding: 10px; /* Etwas Platz um die Autos */
   box-shadow: none;
 }
+.car-info {
+  width: 100%;
+  background: var(--about-bg-color);
+}
 
 .left-arrow,
 .right-arrow {
@@ -457,16 +461,16 @@ th {
   cursor: pointer;
   transform: translateY(-50%);
   z-index: 2;
-  font-size: 50px;
+  font-size: 40px;
   color: #fff;
 }
 
 .left-arrow {
-  left: 10px;
+  left: -12px;
 }
 
 .right-arrow {
-  right: 10px;
+  right: -30px;
 }
 
 /*---------------------------------------
