@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const apiUrl = "https://api.statev.de/req/factory/";
-  const token = "7YC9YM41X63SG52ZDL";
+  const token = "xx";
   let currentSlideIndex = 0; // Aktueller Slide-Index
   let slides = []; // Array für die Slides
 
